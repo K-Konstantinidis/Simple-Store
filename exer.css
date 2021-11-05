@@ -1,0 +1,330 @@
+/*Rainbow welcome text*/
+#welcome{
+	background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: rainbow 9s ease infinite;
+}
+@keyframes rainbow{
+	to {
+		background-position: 2000vh;
+	}
+}
+
+/*Anchor & nav anchor elements*/
+a:visited{
+	display:block;
+	color: blue;
+}
+nav a:link, nav a:visited{
+	display:block;
+	width:150px;
+	text-align:center;
+}
+nav a:hover{
+	background-color:lightgrey;
+}
+
+/*Body and inside body elements*/
+body {
+    margin: 0px;
+}
+header, nav, main, footer{
+    text-align: left;
+}
+header, main, footer{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	grid-area: head;
+}
+nav{ 
+	grid-area: navi;
+}
+main{
+	grid-area: mainP;
+}
+footer{
+	grid-area: foot;
+}
+
+/*Move fischer bootle a bit more right*/
+#margin-solo{
+	margin-left:127.5px;
+}
+
+/*Margin of all photos*/
+.photos{
+	margin:5px;
+}
+
+/*Footer*/
+footer{
+	background-color:Grey;
+	color:black;
+	text-align: center;
+}
+#footer-store{
+	text-align: center;
+}
+footer h2, footer h3{
+	padding:5px;
+	margin:10px;
+	text-align: center;
+}
+hr{
+	border: none;
+	background: black;
+	height: 1px;
+	margin: 15px 120px 15px;
+}
+#Cp{
+	text-align: center;
+}
+
+/*Navigation*/
+nav li{
+	float: right;
+	list-style-type:none;
+}
+nav{
+	display: flex;
+	margin-right: 2px;
+    padding: 0px;
+	flex-flow: column wrap-reverse;
+}
+nav a{
+    padding: 5px;
+    border-top: none;
+    border-bottom: 1px solid lightgrey;
+}
+nav li:last-of-type a {
+    border-bottom: none;
+}
+
+/*Main Body*/
+main{
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: column;
+	justify-content: start;
+	text-align: center;
+}
+main li{
+	list-style-type:none;
+	float: left;
+}
+
+#buy2{
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	border-radius: 30px;
+	height: 33px;
+}
+#buy2 a{
+	color: blue;
+	text-decoration: none;
+}
+#buy2 a:hover{
+	background-color:lightgrey;
+	display: inline-block;
+	text-align: center;
+	border-radius: 30px;
+	height: 33px;
+}
+#put_A_Line{
+	text-decoration: underline;
+	margin-left: 5px;
+}
+
+/*Grid body structure*/
+body {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+		"head navi"
+        "mainP mainP"
+        "foot foot";
+}
+
+/*Move home page pink cola can a bit more right*/
+#margin-solo2{
+	margin-left:15px;
+}
+
+/*Make beer and cocktail checkboxes not visible*/
+#Beer_Options{
+	display: none;
+}
+#Cocktail_Options{
+	display: none;
+}
+
+/*Become pointer on checkboxes*/
+.pointer{
+	cursor: pointer;
+}
+
+/*Make beer and cocktail photos not visible*/
+#beer_photos{
+	display: none;
+}
+#cocktail_photos{
+	display: none;
+}
+
+/*Change type='number' width and margin-top & margin-bottom*/
+.number{
+	width: 3em;
+	margin: 3px 0;
+}
+
+/*Change each type='number' margin-left, so they are underneath each other*/
+#no1{
+	margin-left: 27px;
+}
+#no2{
+	margin-left: 12px;
+}
+#no3{
+	margin-left: 20px;
+}
+#no4{
+	margin-left: 6px;
+}
+#no5{
+	margin-left: 8px;
+}
+#no6{
+	margin-left: 42px;
+}
+#no7{
+	margin-left: 10px;
+}
+#no8{
+	margin-left: 40px;
+}
+#no9{
+	margin-left: 25px;
+}
+#no10{
+	margin-left: 25px;
+}
+#no11{
+	margin-left: 6px;
+}
+
+/*Button*/
+#button{
+	height: 35px;
+	width: 150px;
+	padding: 5px 10px;
+	text-align: center;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: thin solid black;
+	border-radius: 30px;
+}
+#button:hover {
+    background-color: lightgrey;
+	cursor: pointer;
+}
+
+/*Text area left of button*/
+#textar{
+	width: 200px;
+	height: 30px;
+	background-color: lightgrey;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border: thin solid black;
+	color: black;
+	border-radius: 30px;
+}
+
+#lightbottle{
+	margin-left: 80px;
+	margin-right: 5px;
+}
+#fisbottle{
+	margin-left: 128px;
+	margin-right: 5px;
+}
+
+/*Screens >= 600px*/
+@media all and (min-width: 600px) {
+	nav li{
+		float: left;
+		list-style-type:none;
+    }
+	nav{
+		display: flex;
+		margin: 10px;
+		justify-content: flex-end;
+        flex-direction: row;
+	}
+	nav a{
+		padding: 0px;
+		border-top: 0px;
+		border-bottom: 0px;
+	}
+	footer{
+		text-align: left;
+	}
+	.paragraph{
+		margin-left: 5px;
+	}
+	main{
+		display: flex;
+		flex-flow: wrap;
+		flex-direction: column;
+		justify-content: start;
+		text-align: left;
+	}
+	main li{
+		list-style-type:none;
+		float: left;
+	}
+	
+	#buy2{
+		text-align: left;
+	}
+	
+	/*Move home page fischer bootle a bit more right*/
+	#margin-solo{
+		margin-left:100px;
+	}
+	
+	/*Nav Line & Seperator Line Between Home and Shop Icons*/
+	#header-line{
+		border-bottom: thin solid black;
+		height: 70px;
+		margin: 0px 5px;
+	}
+	#seperator-line {
+		border-right: thin solid black;
+		height: 43.5px;
+	}
+	
+	/*Move home page fischer bootle a bit more right*/
+	#lightbottle{
+		margin-left: 0;
+		margin-right: 65px;
+	}
+	#fisbottle{
+		margin-left: 121.5px;
+		margin-right: 105px;
+	}	
+	
+	/*Grid body structure*/
+	body{
+        grid-template-columns: 16.5ch auto;
+        grid-template-areas:
+			"head navi"
+            "mainP mainP"
+            "foot foot";
+    }
+}
