@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="ex.js" defer></script>
+		<link rel="stylesheet" href="exer.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="Home.html"> <img src="images/logo.png" alt="logo of website" height="200"> </a>
+			</div>
+		</header>
+		
+		<div id="header-line">
+			<nav>
+				<ul>
+					<li> <a href="Home.html"> <img src="images/home.png" alt="an icon of a house" width="53" height="40"> </a> </li> 
+					<li id="seperator-line"></li>
+					<li> <a href="Store.html"> <img src="images/store.png" alt="an icon of a store" width="53" height="40"> </a> </li>
+				</ul>
+			</nav>
+		</div>
+			
+		<main>
+		
+			<div class="store">
+				<label id="put_A_Line"for="Choosing_Drink">Choose a type of drink:</label>
+
+				<select id="drinkSelection" name="drinks">
+					<option value="cola">Soft-Drinks</option>
+					<option value="beer">Beers</option>
+					<option value="cocktail">Cocktails</option>
+				</select>
+			</div>
+			
+			<div id="Cola_Options">
+				<input type="checkbox" class="pointer" id="colacan" name="Cola" value="Cola-Can"><label class="pointer" for="colacan">Coca-Cola Can 1.30€</label> <input type="number" id="no1" class="number" name="number1" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="colabottle" name="Cola" value="Cola-Bottle"><label class="pointer" for="colabottle">Coca-Cola Bottle 2.00€</label> <input type="number" id="no2" class="number" name="number2" placeholder="№" min="0" max="20">
+				<br> 
+				<input type="checkbox" class="pointer" id="colalight" name="Cola" value="Cola-Light"><label class="pointer" for="colalight">Coca-Cola Light 1.30€</label> <input type="number" id="no3" class="number" name="number3" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="colapink" name="Cola" value="Pink-Cola"><label class="pointer" for="colapink">Coca-Cola Cherry 1.50€</label> <input type="number" id="no4" class="number" name="number4" placeholder="№" min="0" max="20">
+			</div>
+			
+			<div id="Beer_Options">
+				<input type="checkbox" class="pointer" id="corona" name="Beer" value="Corona-Beer"><label class="pointer" for="corona">Corona 1.80€</label> <input type="number" id="no5" class="number" name="number5" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="fix" name="Beer" value="Fix-Beer"><label class="pointer" for="fix">Fix 1.50€</label> <input type="number" id="no6" class="number" name="number6" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="fischer" name="Beer" value="Fischer-Beer"><label class="pointer" for="fischer">Fischer 1.80€</label> <input type="number" id="no7" class="number" name="number7" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="sol" name="Beer" value="Sol-Beer"><label class="pointer" for="sol">Sol 1.80€</label> <input type="number" id="no8" class="number" name="number8" placeholder="№" min="0" max="20">
+			</div>
+			
+			<div id="Cocktail_Options">
+				<input type="checkbox" class="pointer" id="Martini" name="Cocktail" value="Martini-Cocktail"><label class="pointer" for="Martini">Martini 4.00€</label> <input type="number" id="no9" class="number" name="number9" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="Mai-Tai" name="Cocktail" value="Mai-Tai-Cocktail"><label class="pointer" for="Mai-Tai">Mai Tai 4.50€</label> <input type="number" id="no10" class="number" name="number10" placeholder="№" min="0" max="20">
+				<br>
+				<input type="checkbox" class="pointer" id="Margarita" name="Cocktail" value="Margarita-Cocktail"><label class="pointer" for="Margarita">Margarita 4.00€</label> <input type="number" id="no11" class="number" name="number11" placeholder="№" min="0" max="20">
+			</div>
+				
+			<div id="cola_photos">
+				<ul>
+					<li><img class="photos" src="images/coca-cola.png" alt="a coca cola can" width="300" height="350">
+					<li><img class="photos" src="images/coca-cola-bottle.png" alt="a coca cola bottle" width="300" height="350">
+					<li><img class="photos" src="images/coca-cola-light.png" id='lightbottle' alt="a coca cola light can" width="150" height="350">
+					<li><img class="photos" src="images/coca-cola-pink.png" alt="a coca cola can with cherry flavour" width="300" height="350">
+				</ul>
+			</div>
+			
+			<div id="beer_photos">
+				<ul>	
+					<li><img class="photos" src="images/corona.png" alt="a corona beer" width="300" height="350">
+					<li><img class="photos" src="images/fix.png" alt="a fix beer" width="300" height="350">
+					<li><img class="photos" src="images/fischer.png" id='fisbottle' alt="a fischer beer" width="100" height="350">
+					<li><img class="photos" src="images/sol.png" alt="a sol beer" width="300" height="350">
+				</ul>
+			</div>
+			
+			<div id="cocktail_photos">
+				<ul>	
+					<li><img class="photos" src="images/Martini.png" alt="a martini" width="300" height="360">
+					<li><img class="photos" src="images/Mai Tai.png" alt="a mai tai" width="300" height="360">
+					<li><img class="photos" src="images/Margarita.png" alt="a margarita" width="300" height="360">
+				</ul>
+			</div>
+			
+			<div id="cost_calculation"> 
+				<input type="textarea" id="textar" for="button" value="The total cost is: " disabled><input type="button" id="button" value="Calculate Cost">
+			</div>
+		</main>
+		
+		<footer>
+			<h2>My store</h2>
+			<h3>Made with HTML-CSS-JS</h3>
+			<a href="Store.html"> <h3 id="footer-store">>Click here to buy some drinks<</h3> </a>
+			<hr>
+			<p id="Cp">Copyright 2021 | My Shop</p>
+		</footer>
+	</body>
+</html>
