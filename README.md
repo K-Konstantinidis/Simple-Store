@@ -1,4 +1,7 @@
 # Simple-Store
+
+https://k-konstantinidis.github.io/Simple-Store/
+
 This is a very simple version of a web store, without the help of Bootstrap. It has 2 different pages. There is no PHP. 
 Also you are not allowed to buy something from the store, you can only see the total cost.
 
